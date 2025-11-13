@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SOLID TRUST — App interactiva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="siteNav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">❤</div>
+        <div>SOLID TRUST</div>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#problema">Problema</a>
+        <a href="#solucion">Solución</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#tecnologia">Tecnología</a>
+        <button id="themeToggle" title="Cambiar tema" aria-label="Cambiar tema" class="theme-btn">☀️</button>
+        <button class="btn-demo">Ver Demo</button>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+      <a href="#problema">Problema</a>
+      <a href="#solucion">Solución</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#tecnologia">Tecnología</a>
+      <button class="btn-demo" style="width:100%; margin-top:12px">Ver Demo</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="bg-blob">
+      <div class="blob-left" aria-hidden="true"></div>
+      <div class="blob-right" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero-content container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Construido sobre StarkNet</span>
+      </div>
+
+      <h1 class="hero-title">
+        Donaciones <span class="highlight">trazables</span>, transparentes y seguras
+      </h1>
+
+      <p class="hero-desc">
+        Una dApp en StarkNet que garantiza que cada donativo se use correctamente, protegiendo la privacidad de los beneficiarios
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn-main" id="demoBtn">
+          <span>Ver Demo</span>
+          <span class="chev">›</span>
+        </button>
+        <button class="btn-ghost" id="howItWorksBtn">Cómo funciona</button>
+      </div>
+
+      <div class="stats-panel" role="region" aria-label="Estadísticas">
+        <div class="stat">
+          <div class="icon icon-heart">❤</div>
+          <div><h4>100%</h4><p>Trazable</p></div>
+        </div>
+        <div class="stat">
+          <div class="icon icon-shield">🛡️</div>
+          <div><h4>0</h4><p>Fraudes</p></div>
+        </div>
+        <div class="stat">
+          <div class="icon icon-lock">🔒</div>
+          <div><h4>Total</h4><p>Privacidad</p></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN: PROBLEMA -->
+  <section id="problema" class="alt section">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h2 class="section-title">La confianza en los donativos <span class="accent-red">se ha perdido</span></h2>
+          <p class="muted">
+            En México, muchas personas desconfían de las campañas de donación por la falta de transparencia y el mal uso de los fondos en emergencias como huracanes, sismos e incendios.
+          </p>
+
+          <div class="callout">
+            <p class="callout-quote">"Las donaciones llegan, pero la confianza falta."</p>
+          </div>
+
+          <div class="list-issues">
+            <div class="issue"><div class="dot">✗</div><div><p class="muted">Fondos desviados o mal utilizados</p></div></div>
+            <div class="issue"><div class="dot">✗</div><div><p class="muted">Falta de transparencia en el uso de recursos</p></div></div>
+            <div class="issue"><div class="dot">✗</div><div><p class="muted">Imposibilidad de verificar el impacto real</p></div></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="trace-panel">
+            <div class="trace-step"><span>Donativo registrado</span><span class="accent-red">❓</span></div>
+            <div class="divider-line" aria-hidden="true"></div>
+            <div class="trace-step"><span>¿A dónde fue?</span><span class="accent-red">❓</span></div>
+            <div class="divider-line" aria-hidden="true"></div>
+            <div class="trace-step"><span>¿Quién lo recibió?</span><span class="accent-red">❓</span></div>
+            <div class="trace-note">Sin trazabilidad = Sin confianza</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: SOLUCIÓN -->
+  <section id="solucion" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Una dApp que <span class="gradient-text">devuelve la confianza</span></h2>
+        <p class="muted" style="max-width:780px; margin:10px auto 0;">Nuestra aplicación descentralizada sobre StarkNet permite donaciones verificables, privadas y trazables. Cada peso donado se registra en la blockchain, solo puede usarse por beneficiarios aprobados, y es auditable por cualquiera.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card-lg">
+          <div class="card-icon-large icon-blue">🛡️</div>
+          <h3>Transparencia Total</h3>
+          <p class="muted">Cada transacción queda registrada on-chain y puede ser auditada por cualquiera</p>
+        </div>
+
+        <div class="card-lg">
+          <div class="card-icon-large icon-pink">🔒</div>
+          <h3>Uso Controlado</h3>
+          <p class="muted">Los fondos solo se usan en productos esenciales autorizados</p>
+        </div>
+
+        <div class="card-lg">
+          <div class="card-icon-large icon-green">👥</div>
+          <h3>Privacidad</h3>
+          <p class="muted">Beneficiarios anónimos gracias a la tecnología ZK-STARKs</p>
+        </div>
+
+        <div class="card-lg">
+          <div class="card-icon-large icon-orange">⚡</div>
+          <h3>Costos Bajos</h3>
+          <p class="muted">Ideal para microdonaciones gracias a StarkNet Layer 2</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: CÓMO FUNCIONA -->
+  <section id="como-funciona" class="alt section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Flujo de <span class="gradient-text">donaciones trazables</span></h2>
+        <p class="muted" style="max-width:780px; margin:10px auto 0">La transparencia se logra combinando contratos inteligentes y pruebas de conocimiento cero (ZK-STARKs)</p>
+      </div>
+
+      <div class="timeline">
+        <div class="line" aria-hidden="true"></div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-icon">💝</div>
+            <div class="step-number">1</div>
+            <h3>Donante</h3>
+            <p class="muted">Conecta wallet y dona USDC/ETH a la campaña elegida</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">🏛️</div>
+            <div class="step-number">2</div>
+            <h3>ONG</h3>
+            <p class="muted">Valida beneficiarios y genera prueba ZK-STARK de elegibilidad</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">📜</div>
+            <div class="step-number">3</div>
+            <h3>Smart Contract</h3>
+            <p class="muted">Verifica la prueba y emite VoucherNFT programable</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">👤</div>
+            <div class="step-number">4</div>
+            <h3>Beneficiario</h3>
+            <p class="muted">Usa el voucher en comercios aliados para productos esenciales</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon">🏪</div>
+            <div class="step-number">5</div>
+            <h3>Comercio</h3>
+            <p class="muted">Canjea el voucher y recibe el pago on-chain verificado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: TECNOLOGÍA -->
+  <section id="tecnologia" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Tecnología que <span class="gradient-text">garantiza confianza</span></h2>
+        <p class="muted">Construido sobre StarkNet, la Layer 2 más avanzada de Ethereum</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-block">
+          <div class="tech-head"><div class="tech-check">✓</div><h3>StarkNet</h3></div>
+          <p class="muted">Escalabilidad y bajos costos gracias a su arquitectura ZK-Rollup de última generación</p>
+          <div class="feature-list">
+            <div class="feature-item"><div class="feature-dot"></div><div>Transacciones instantáneas</div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div>Costos mínimos</div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div>Seguridad de Ethereum</div></div>
+          </div>
+        </div>
+
+        <div class="tech-block">
+          <div class="tech-head"><div class="tech-check green">✓</div><h3>ZK-STARKs</h3></div>
+          <p class="muted">Permiten verificar la elegibilidad sin revelar datos sensibles de los beneficiarios</p>
+          <div class="feature-list">
+            <div class="feature-item"><div class="feature-dot"></div><div>Privacidad total</div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div>Verificación matemática</div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div>Sin configuración confiable</div></div>
+          </div>
+        </div>
+
+        <div class="tech-block">
+          <div class="tech-head"><div class="tech-check blue">✓</div><h3>Smart Contracts (Cairo)</h3></div>
+          <p class="muted">Controlan automáticamente los fondos, vouchers y restricciones de uso</p>
+          <div class="feature-list">
+            <div class="feature-item"><div class="feature-dot"></div><div>Código auditable</div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div>Ejecución automática</div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div>Sin intermediarios</div></div>
+          </div>
+        </div>
+
+        <div class="tech-block">
+          <div class="tech-head"><div class="tech-check green2">✓</div><h3>VoucherNFTs</h3></div>
+          <p class="muted">Tokens programables y trazables diseñados específicamente para ayuda humanitaria</p>
+          <div class="feature-list">
+            <div class="feature-item"><div class="feature-dot"></div><div>No transferibles</div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div>Uso limitado</div></div>
+            <div class="feature-item"><div class="feature-dot"></div><div>Totalmente trazables</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout cta">
+        <p class="cta-title">"Cada transacción es verificable, privada y auditable"</p>
+        <p class="muted">La combinación perfecta de transparencia y privacidad</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: IMPACTO -->
+  <section id="impacto" class="alt section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title"><span class="gradient-text">Impacto</span> social y beneficios reales</h2>
+        <p class="muted" style="max-width:780px; margin:10px auto 0">Esta dApp redefine cómo se confía en las donaciones en México, garantizando transparencia y respeto a la privacidad</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="big-stat"><div class="num">+500</div><div class="muted">Donantes activos</div></div>
+        <div class="big-stat"><div class="num">0</div><div class="muted">Casos de fraude</div></div>
+        <div class="big-stat"><div class="num">100%</div><div class="muted">Trazabilidad</div></div>
+        <div class="big-stat"><div class="num">$50K</div><div class="muted">Donados en total</div></div>
+      </div>
+
+      <div class="benefits-grid" style="margin-top:22px">
+        <div class="card-lg"><div style="font-size:28px">🤝</div><h3>Recupera la confianza</h3><p class="muted">Restaura la fe en la ayuda humanitaria mediante transparencia verificable</p></div>
+        <div class="card-lg"><div style="font-size:28px">🛡️</div><h3>Evita el desvío de fondos</h3><p class="muted">Los contratos inteligentes garantizan el uso correcto de cada donativo</p></div>
+        <div class="card-lg"><div style="font-size:28px">🔒</div><h3>Protege la identidad</h3><p class="muted">ZK-STARKs mantienen anónimos a los beneficiarios mientras se verifica su elegibilidad</p></div>
+        <div class="card-lg"><div style="font-size:28px">🌍</div><h3>Microdonaciones globales</h3><p class="muted">Facilita contribuciones desde cualquier parte del mundo con costos mínimos</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: EQUIPO -->
+  <section id="equipo" class="section">
+    <div class="container text-center">
+      <h2 class="section-title">Creado por <span class="gradient-text">The Semicolon Killers</span></h2>
+      <p class="muted" style="max-width:780px; margin:10px auto 18px">Equipo multidisciplinario de desarrolladores y diseñadores apasionados por la transparencia, la innovación y la tecnología blockchain</p>
+
+      <div class="team-panel card-lg" style="max-width:920px; margin:0 auto;">
+        <div class="team-list">
+          <div class="member"><div class="avatar">1</div><div class="member-name">Miembro 1</div><div class="muted">Rol</div></div>
+          <div class="member"><div class="avatar">2</div><div class="member-name">Miembro 2</div><div class="muted">Rol</div></div>
+          <div class="member"><div class="avatar">3</div><div class="member-name">Miembro 3</div><div class="muted">Rol</div></div>
+          <div class="member"><div class="avatar">4</div><div class="member-name">Miembro 4</div><div class="muted">Rol</div></div>
+        </div>
+
+        <p class="team-quote">"Construyendo confianza, una transacción a la vez."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="alt section">
+    <div class="container text-center">
+      <h2 class="section-title">¿Listo para revolucionar las donaciones?</h2>
+      <p class="muted" style="max-width:700px; margin:8px auto 18px">Únete al futuro de la transparencia en ayuda humanitaria</p>
+      <div class="cta-ctas">
+        <button class="btn-main" onclick="alert('Probar demo - placeholder')">Probar Demo ›</button>
+        <button class="btn-ghost" onclick="window.open('https://starknet.io','_blank')">Conoce StarkNet ↗</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="section">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="brand-left">
+          <div class="logo-large">❤</div>
+          <div class="brand-name">SOLID TRUST</div>
+        </div>
+        <p class="muted footer-desc">Transformando la ayuda humanitaria a través de blockchain. Transparencia, privacidad y confianza en cada donativo.</p>
+        <div class="socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">TW</a>
+          <a href="https://starknet.io" target="_blank" rel="noopener noreferrer" aria-label="StarkNet">SN</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Recursos</h3>
+        <ul>
+          <li><a href="#">Documentación</a></li>
+          <li><a href="#">Whitepaper</a></li>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">API</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Comunidad</h3>
+        <ul>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container legal">
+      <div>© 2025 The Semicolon Killers. Todos los derechos reservados.</div>
+      <div class="legal-rights">
+        <div class="muted">Construido con</div>
+        <div class="heart-accent">❤</div>
+        <div class="muted">sobre</div>
+        <div class="gradient-text brand-starknet">StarkNet</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ================
+    // INTERACTIVITY
+    // ================
+    (function(){
+      const root = document.documentElement;
+      const themeToggle = document.getElementById('themeToggle');
+      const mobileToggle = document.getElementById('mobileToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const siteNav = document.getElementById('siteNav');
+      const demoBtn = document.getElementById('demoBtn');
+      const howItWorksBtn = document.getElementById('howItWorksBtn');
+
+      // Start in dark mode by default
+      let darkMode = true;
+      try {
+        const stored = localStorage.getItem('dtz_theme');
+        if(stored !== null) darkMode = stored === 'dark';
+      } catch(e){}
+
+      function applyTheme(){
+        if(darkMode){
+          document.documentElement.classList.remove('light');
+          themeToggle.textContent = '☀️';
+        } else {
+          document.documentElement.classList.add('light');
+          themeToggle.textContent = '🌙';
+        }
+        try { localStorage.setItem('dtz_theme', darkMode ? 'dark' : 'light'); } catch(e){}
+      }
+      applyTheme();
+
+      themeToggle.addEventListener('click', function(){
+        darkMode = !darkMode;
+        applyTheme();
+      });
+
+      // mobile menu toggle
+      mobileToggle.addEventListener('click', function(){
+        if(mobileMenu.style.display === 'none' || !mobileMenu.style.display){
+          mobileMenu.style.display = 'block';
+          mobileMenu.setAttribute('aria-hidden','false');
+          mobileToggle.textContent = '✕';
+        } else {
+          mobileMenu.style.display = 'none';
+          mobileMenu.setAttribute('aria-hidden','true');
+          mobileToggle.textContent = '☰';
+        }
+      });
+
+      // scroll effect for nav shadow
+      window.addEventListener('scroll', function(){
+        const y = window.scrollY || window.pageYOffset;
+        if(y > 10){
+          siteNav.classList.add('scrolled');
+        } else {
+          siteNav.classList.remove('scrolled');
+        }
+      });
+
+      // Close mobile menu when clicking a link
+      mobileMenu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          mobileMenu.style.display = 'none';
+          mobileMenu.setAttribute('aria-hidden','true');
+          mobileToggle.textContent = '☰';
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', (e)=>{
+          const target = document.querySelector(a.getAttribute('href'));
+          if(target){
+            e.preventDefault();
+            const top = target.getBoundingClientRect().top + window.pageYOffset - 72; // navbar offset
+            window.scrollTo({top, behavior:'smooth'});
+          }
+        });
+      });
+
+      // Demo button example interaction
+      demoBtn.addEventListener('click', () => {
+        alert('Demo - placeholder. Aquí puedes enlazar tu demo real o abrir un modal.');
+      });
+
+      howItWorksBtn.addEventListener('click', () => {
+        document.getElementById('como-funciona').scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    })();
+  </script>
+</body>
+</html>
